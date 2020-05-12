@@ -20,4 +20,12 @@ class Index extends Api
     {
         $this->success('请求成功');
     }
+
+    /**
+     * 测试
+     */
+    public function test()
+    {
+	    var_dump('test');
+    }
 }
