@@ -1,0 +1,118 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Site_type')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-site_type" data-rule="required" class="form-control" name="row[site_type]" type="number" value="{$row.site_type|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Qc_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-qc_id" data-rule="required" data-source="qc/index" class="form-control selectpage" name="row[qc_id]" type="text" value="{$row.qc_id|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Pid')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-pid" data-rule="required" class="form-control" name="row[pid]" type="number" value="{$row.pid|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-name" data-rule="required" class="form-control " rows="5" name="row[name]" cols="50">{$row.name|htmlentities}</textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Score')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-score" data-rule="required" class="form-control" step="0.1" name="row[score]" type="number" value="{$row.score|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Answer')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-answer" data-rule="required" class="form-control " rows="5" name="row[answer]" cols="50">{$row.answer|htmlentities}</textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Content')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-content" data-rule="required" class="form-control editor" rows="5" name="row[content]" cols="50">{$row.content|htmlentities}</textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Status')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-status" data-rule="required" class="form-control" name="row[status]" type="number" value="{$row.status|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Typelist')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-typelist" data-rule="required" class="form-control" name="row[typelist]" type="number" value="{$row.typelist|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Site_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-site_id" data-rule="required" data-source="site/index" class="form-control selectpage" name="row[site_id]" type="text" value="{$row.site_id|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Description')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-description" class="form-control " rows="5" name="row[description]" cols="50">{$row.description|htmlentities}</textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Explain')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-explain" class="form-control" name="row[explain]" type="text" value="{$row.explain|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Small_type')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-small_type" data-rule="required" class="form-control" name="row[small_type]" type="number" value="{$row.small_type|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Question_difficulty')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-question_difficulty" data-rule="required" class="form-control" name="row[question_difficulty]" type="number" value="{$row.question_difficulty|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Code')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-code" data-rule="required" class="form-control" name="row[code]" type="text" value="{$row.code|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Weigh')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-weigh" data-rule="required" class="form-control" name="row[weigh]" type="number" value="{$row.weigh|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Sum_post')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-sum_post" data-rule="required" class="form-control" name="row[sum_post]" type="number" value="{$row.sum_post|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Fail_sum')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-fail_sum" data-rule="required" class="form-control" name="row[fail_sum]" type="number" value="{$row.fail_sum|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>
